@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Merriweather', serif;
+    src: url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+}
+*::before{
+    display: inline-block;
+}
+*::after{
+    display: inline-block;
+}
+* {
+    font-family: "Merriweather",serif;
+}
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 36px;
+    margin: 45px 0 0;
+}
+h2 {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 27px;
+}
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+}
+h4 {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 21px;
+}
+h5 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+}
+h6 {
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 21px;
+}
+* {
+    background-color: #E5E5E5;
+    line-height: 21px;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.navigation {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    min-width: 1100px;
+}
+input[type="text"] {
+    font-family: inherit; /* 1 */
+    font-size: inherit; /* 1 */
+    margin: 0; /* 2 */
+    font-weight: 400;
+    line-height: 21px;
+    min-width: 294px;
+    box-sizing: border-box;
+    outline: 1px solid #E1E1E1;
+    padding: 1em;
+    border: 0;
+    height: 46px;
+}
+#search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+#search *{
+    display: inline-block;
+}
+
+button.custom_button{
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0;
+    color: #F4F6F9;
+    background-color: #403432;
+    min-width: 118px;
+    min-height: 48px;
+    font-weight: bold;
+    border: none;
+}
+.custom_button:hover{
+    background-color: #776763;
+    cursor: pointer;
+}
+.custom_button:disabled{
+    background-color: #C1B4B1;
+}
+.custom_button.custom_button--in_cart{
+    background-color: #5B3A32;
+}
+.custom_button--in_cart::before{
+    content: url('mark.svg');
+    display: inline-block;
+    width: 13.3px;
+    height: 100%;
+    margin-right: 7.2px;
+}
+nav>*+* {
+    margin-left: 2em;
+}
+
+#contacts__container>*+*{
+    margin-left: 2em;
+}
+
+#phone::before{
+    content: url("phone.svg");
+    margin-right: .5em;
+}
+#address::before{
+    content: url("address.svg");
+    margin-right: .5em;
+}
+
+#content {
+    box-sizing: border-box;
+    border-top: 1px solid #E1E1E1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    min-height: 675px;
+}
+
+.content__container{
+    width: 72%;
+}
+
+.card-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.card-list>*+*{
+    margin-left: 32px;
+}
+
+.card{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.card>img{
+    width: 280px;
+    height: 160px;
+    overflow: hidden;
+}
+.card__description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 27px;
+}
+
+.card>*+*{
+    margin-top: 20px;
+    padding: 0 24px;
+}
+
+.card__prices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.card__price{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.card__price::after{
+    content: '\a0$';
+    display: inline-block;
+    text-decoration: inherit;
+}
+
+.card__price--old{
+    text-decoration: line-through;
+    color: #A0A0A0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+}
+
+.card__purchase{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__name::before{
+    content: '«';
+}
+
+.card__name::after{
+    content: '»';
+}
+
+.card__sold{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.card--sold{
+    opacity: .5;
+}
